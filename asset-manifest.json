@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fcc-markdown-generator/static/css/main.1c1b1abb.css",
+    "main.js": "/fcc-markdown-generator/static/js/main.47f9c062.js",
+    "static/js/453.f0ad8212.chunk.js": "/fcc-markdown-generator/static/js/453.f0ad8212.chunk.js",
+    "index.html": "/fcc-markdown-generator/index.html",
+    "main.1c1b1abb.css.map": "/fcc-markdown-generator/static/css/main.1c1b1abb.css.map",
+    "main.47f9c062.js.map": "/fcc-markdown-generator/static/js/main.47f9c062.js.map",
+    "453.f0ad8212.chunk.js.map": "/fcc-markdown-generator/static/js/453.f0ad8212.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c1b1abb.css",
+    "static/js/main.47f9c062.js"
+  ]
+}
