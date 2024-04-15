@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {useState} from 'react';
+import ReactMarkdown from 'react-markdown'
+import defaultMardown from './Components/defaultMarkdown';
+import { marked } from 'marked';
+import Markdown from 'react-markdown';
 
 function App() {
+  const [markdownText, setMarkdownText] = useState(defaultMardown);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body className="App-body">
+        <div className='editorWrap'>
+          <div className="Toolbar">
+            <h2>Editor</h2>
+          </div>
+          <textarea id="editor" value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}>
+
+          </textarea>
+        </div>
+        <div className="previewWrap">
+          <div className="Toolbar">
+            <h2>Previewer</h2>
+          </div>
+          <div id="preview">
+            <ReactMarkdown>{markdownText}</ReactMarkdown>
+          </div>
+        </div>
+      </body>
     </div>
   );
 }
